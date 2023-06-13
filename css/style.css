@@ -1,0 +1,15 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: black;
+    color: bisque;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.orange {
+    color: orange;
+}

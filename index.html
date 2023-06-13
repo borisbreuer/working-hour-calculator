@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="manifest" href="./manifest.webmanifest"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <script src="./js/registerSW.js"></script> -->
+    <script src="./js/main.js" defer></script>
+    <title>Zeitberechnung</title>
+</head>
+<body>
+    <div id="app">
+        <form action="#" id="timeForm">
+            <p>
+                <label for="startTimeA">Arbeits-Beginn:</label>
+                <input type="time" name="startTimeA" id="startTimeA" value="08:00" />
+                <label for="endTimeA">Arbeits-Ende:</label>
+                <input type="time" name="endTimeA" id="endTimeA" value="11:45" />
+            </p>
+            <p>
+                <label for="startTimeB">Arbeits-Beginn:</label>
+                <input type="time" name="startTimeB" id="startTimeB" value="12:15" />
+                <label for="endTimeB">Arbeits-Ende:</label>
+                <input type="time" name="endTimeB" id="endTimeB" value="16:30" />
+            </p>
+            <input type="submit" id="submitBtn" value="Berechnen" />
+        </form>
+        <p>Zeit A <time class="bold orange" id="timeOutputA">--:--</time> hh:mm</p>
+        <p>Industriezeit A <span class="bold orange" id="decOutputA">--,--</span> h</p>
+        <p>Zeit B <time class="bold orange" id="timeOutputB">--:--</time> hh:mm</p>
+        <p>Industriezeit B <span class="bold orange" id="decOutputB">--,--</span> h</p>
+        <p>Zeit T <time class="bold orange" id="timeOutputT">--:--</time> hh:mm</p>
+        <p>Industriezeit T <span class="bold orange" id="decOutputT">--,--</span> h</p>
+    </div>
+</body>
+</html>
