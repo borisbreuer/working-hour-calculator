@@ -85,8 +85,8 @@
     timeForm.addEventListener('submit', executeCalculation)
     startTimeA.addEventListener('input', executeCalculation)
     endTimeA.addEventListener('input', executeCalculation)
-    timeOutputA.addEventListener('input', executeCalculation)
-    decOutputA.addEventListener('input', executeCalculation)
+    startTimeB.addEventListener('input', executeCalculation)
+    endTimeB.addEventListener('input', executeCalculation)
 
     window.addEventListener('load', executeCalculation)
 
