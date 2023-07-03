@@ -1,4 +1,4 @@
-const cacheVersion = 'v2-wh-cache'
+const cacheVersion = 'v1-wh-cache'
 const BASE_URL = location.protocol + '//' + location.host
 const cacheMatcherQuery = 'cache=true'
 

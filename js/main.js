@@ -22,6 +22,13 @@
         })
     }
 
+    function localStringTwoDigits(float) {
+        return float.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })
+    }
+
     const getTimestampFromHHMM = (timeHHMM) => {
         const [ hh, mm ] = timeHHMM.split(':') 
         const time = new Date(Date.UTC(0))
@@ -35,7 +42,9 @@
     const getDecTime = (time) => {
         const workTimeHours = time.getUTCHours()
         const workTimeMinutes = time.getUTCMinutes()
-        return [ workTimeHours, Math.round((workTimeMinutes / 60) * 100) ].join(',')
+
+        console.log(Math.round((workTimeMinutes / 60) * 100) / 100)
+        return workTimeHours + Math.round((workTimeMinutes / 60) * 100) / 100
     }
 
     getWorkTimeDuratons = (startTimeStamp, endTimeStamp) => {
@@ -44,7 +53,7 @@
 
         return ({
             workingTimeInHHMM: leadingZero(workTime),
-            workingTimeInDec: getDecTime(workTime),
+            workingTimeInDec: localStringTwoDigits(getDecTime(workTime)),
             workingTimeAsTimestamp: workTime.getTime()
         })
     }
@@ -61,7 +70,7 @@
 
         return ({
             workingTimeInHHMM: leadingZero(totalTime),
-            workingTimeInDec: getDecTime(totalTime),
+            workingTimeInDec: localStringTwoDigits(getDecTime(totalTime)),
             workingTimeAsTimestamp: totalTime.getTime()
         })
     }
