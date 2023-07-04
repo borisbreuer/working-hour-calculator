@@ -4,6 +4,7 @@
 body {
     background-color: black;
     color: bisque;
+    padding: 0.5rem;
 }
 
 .bold {
@@ -12,4 +13,18 @@ body {
 
 .orange {
     color: orange;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem; 
+}
+
+table, td, th {
+    border: 1px solid orange; 
+}
+td, th{
+    padding: 0.5rem 0.8rem; 
+    text-align: left;
 }

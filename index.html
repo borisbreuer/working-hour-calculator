@@ -57,12 +57,29 @@
             </p>
             <input type="submit" id="submitBtn" value="Berechnen" />
         </form>
-        <p>Zeit A <time class="bold orange" id="timeOutputA">--:--</time> hh:mm</p>
-        <p>Industriezeit A <span class="bold orange" id="decOutputA">--,--</span> h</p>
-        <p>Zeit B <time class="bold orange" id="timeOutputB">--:--</time> hh:mm</p>
-        <p>Industriezeit B <span class="bold orange" id="decOutputB">--,--</span> h</p>
-        <p>Zeit T <time class="bold orange" id="timeOutputT">--:--</time> hh:mm</p>
-        <p>Industriezeit T <span class="bold orange" id="decOutputT">--,--</span> h</p>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>hh:mm</th>
+                <th>h</th>
+            </tr>
+            <tr>
+                <td>Vormittags</td>
+                <td><time class="bold orange" id="timeOutputA">--:--</time></td>
+                <td><span class="bold orange" id="decOutputA">--,--</span></td>
+            </tr>
+            <tr>
+                <td>Nachmittags</td>
+                <td><time class="bold orange" id="timeOutputB">--:--</time></td>
+                <td><span class="bold orange" id="decOutputB">--,--</span></td>
+            </tr>
+            <tr>
+                <td>Gesamt</td>
+                <td><time class="bold orange" id="timeOutputT">--:--</time></td>
+                <td><span class="bold orange" id="decOutputT">--,--</span></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
