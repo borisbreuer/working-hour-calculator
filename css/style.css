@@ -7,6 +7,17 @@ body {
     padding: 0.5rem;
 }
 
+input {
+    background-color: bisque;
+    border: 1px solid orange; 
+    padding: 0.2rem 0.3rem;
+    outline: none;
+}
+
+input[type="submit"] {
+    cursor: pointer
+}
+
 .bold {
     font-weight: bolder;
 }
@@ -15,16 +26,35 @@ body {
     color: orange;
 }
 
-table {
+table.input {
+    border-collapse: collapse;
+    margin-top: 1rem; 
+}
+
+table.input, 
+table.input td, 
+table.input th {
+    border: 0px solid orange; 
+}
+table.input td, 
+table.input th{
+    padding: 0.5rem 0.8rem 0.5rem 0; 
+    text-align: left;
+}
+
+table.output {
     border-collapse: collapse;
     width: 100%;
     margin-top: 1rem; 
 }
 
-table, td, th {
+table.output, 
+table.output td, 
+table.output th {
     border: 1px solid orange; 
 }
-td, th{
+table.output td, 
+table.output th{
     padding: 0.5rem 0.8rem; 
     text-align: left;
 }

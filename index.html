@@ -43,22 +43,28 @@
 <body>
     <div id="app">
         <form action="#" id="timeForm">
-            <p>
-                <label for="startTimeA">Arbeits-Beginn:</label>
-                <input type="time" name="startTimeA" id="startTimeA" value="08:00" />
-                <label for="endTimeA">Arbeits-Ende:</label>
-                <input type="time" name="endTimeA" id="endTimeA" value="11:45" />
-            </p>
-            <p>
-                <label for="startTimeB">Arbeits-Beginn:</label>
-                <input type="time" name="startTimeB" id="startTimeB" value="12:15" />
-                <label for="endTimeB">Arbeits-Ende:</label>
-                <input type="time" name="endTimeB" id="endTimeB" value="16:30" />
-            </p>
+            <table class="input">
+                <tr>
+                    <td><label for="startTimeA">Vormittags von:</label></td>
+                    <td>
+                        <input type="time" name="startTimeA" id="startTimeA" value="08:00" />
+                        <label for="endTimeA">bis:</label>
+                        <input type="time" name="endTimeA" id="endTimeA" value="11:45" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="startTimeB">Nachmittags von:</label></td>
+                    <td>
+                        <input type="time" name="startTimeB" id="startTimeB" value="12:15" />
+                        <label for="endTimeB">bis:</label>
+                        <input type="time" name="endTimeB" id="endTimeB" value="16:30" />
+                    </td>
+                </tr>
+            </table>
             <input type="submit" id="submitBtn" value="Berechnen" />
         </form>
 
-        <table>
+        <table class="output">
             <tr>
                 <th></th>
                 <th>hh:mm</th>

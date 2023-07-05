@@ -98,6 +98,4 @@
     endTimeB.addEventListener('input', executeCalculation)
 
     window.addEventListener('load', executeCalculation)
-
-
 })()
